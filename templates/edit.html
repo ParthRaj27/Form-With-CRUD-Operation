@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/ico" href="static/admin.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+      <title>EditPanel</title>
+    <link
+      rel="stylesheet" href="{{ url_for('static' ,  filename='edit.css') }}" />
+    <script
+      src="https://kit.fontawesome.com/433888fe69.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Edit Panel</h1>
+
+      <form action="/edit/{{data.sr}}" method="post" id="EditForm">
+        <div class="box">
+          <i class="fa fa-arrow-right"></i>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Edit Name"
+            autocomplete="off"
+            value="{{data.name}}"
+          />
+        </div>
+
+        <div class="box">
+          <i class="fa fa-key"></i>
+          <input
+            type="text"
+            name="enrollment"
+            id="enrollment"
+            placeholder="Edit Enrollment"
+            value="{{data.enrollment}}"
+          />
+        </div>
+
+        <div class="box">
+          <i class="fa fa-arrow-right"></i>
+          <input
+            type="text"
+            name="branch"
+            id="branch"
+            placeholder="Edit Branch"
+            value="{{data.branch}}"
+          />
+        </div>
+
+        <div class="box">
+          <i class="fa fa-arrow-right"></i>
+          <input
+            type="text"
+            name="class"
+            id="class"
+            placeholder="Edit Class "
+            value="{{data.class2}}"
+          />
+        </div>
+
+        <div class="box">
+          <i class="fa fa-arrow-right"></i>
+          <input
+            type="text"
+            name="phone number"
+            id="number"
+            placeholder="Edit Phone Number"
+            value="{{data.number}}"
+          />
+        </div>
+
+        <div class="box">
+          <i class="fa fa-envelope"></i>
+          <input
+            type="text"
+            name="email"
+            id="address"
+            placeholder="Edit E-mail Address"
+            value="{{data.email}}"
+          />
+        </div>
+
+        <div class="col-lg-12">
+          <button type="submit" id="form-submit" class="btn">
+            Save Edited Entry
+          </button>
+        </div>
+      </form>
+      <!-- <button type="submit" id="form-submit" class="btn"></button> -->
+      <button onclick="window.location.href='/login'">
+        Click Here For Admin Panel
+      </button>
+    </div>
+  </body>
+</html>

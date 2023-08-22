@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/ico" href="static/edit2.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static' ,  filename='login.css') }}"
+    />
+    <script
+      src="https://kit.fontawesome.com/433888fe69.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>AdminPanel</h1>
+      <form action="/login" method="POST" id="dashboard">
+       
+          <div class="box">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input
+              type="password"
+              name="username"
+              id="username"
+              placeholder="Enter User Name" autocomplete="off"
+            />
+          </div>
+       
+          <div class="box">
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter The password"
+            />
+          </div>
+        
+          <!-- <div class="box">
+            <i class="fa fa-arrow-right"></i>
+            <input
+              type="text"
+              name="branch"
+              id="branch"
+              placeholder="Enter The Branch"
+            />
+          </div> -->
+        
+          <!-- <div class="box">
+            <i class="fa fa-arrow-right"></i>
+            <input
+              type="text"
+              name="class"
+              id="class"
+              placeholder="Enter The Class "
+            />
+          </div> -->
+        
+          <!-- <div class="box">
+            <i class="fa fa-arrow-right"></i>
+            <input
+              type="text"
+              name="phone number"
+              id="number"
+              placeholder="Enter Phone Number"
+            />
+          </div> -->
+        
+          <!-- <div class="box">
+            <i class="fa fa-envelope"></i>
+            <input
+              type="text"
+              name="email"
+              id="address"
+              placeholder="Enter Address"
+            />
+          </div> -->
+        
+      <div class="col-lg-12">
+        
+          <button type="submit" id="form-submit" class="btn">Login</button>
+        
+      </div>
+    </form>
+    </div>
+  </body>
+</html>

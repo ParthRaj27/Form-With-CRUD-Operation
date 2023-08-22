@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/ico" href="static/favicon.png">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static' ,  filename='index.css') }}"
+    />
+    <script
+      src="https://kit.fontawesome.com/433888fe69.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student</h1>
+      <form action="/data" method="post" id="data">
+       
+          <div class="box">
+            <i class="fa fa-arrow-right"></i>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Name of The Student" autocomplete="off"
+            />
+          </div>
+       
+          <div class="box">
+            <i class="fa fa-key"></i>
+            <input
+              type="text"
+              name="enrollment"
+              id="enrollment"
+              placeholder="Enter The Enrollment"
+            />
+          </div>
+        
+          <div class="box">
+            <i class="fa fa-arrow-right"></i>
+            <input
+              type="text"
+              name="branch"
+              id="branch"
+              placeholder="Enter The Branch"
+            />
+          </div>
+        
+          <div class="box">
+            <i class="fa fa-arrow-right"></i>
+            <input
+              type="text"
+              name="class"
+              id="class"
+              placeholder="Enter The Class "
+            />
+          </div>
+        
+          <div class="box">
+            <i class="fa fa-arrow-right"></i>
+            <input
+              type="text"
+              name="phone number"
+              id="number"
+              placeholder="Enter Phone Number"
+            />
+          </div>
+        
+          <div class="box">
+            <i class="fa fa-envelope"></i>
+            <input
+              type="text"
+              name="email"
+              id="address"
+              placeholder="Enter Address"
+            />
+          </div>
+        
+      <div class="col-lg-12">
+        
+          <button type="submit" id="form-submit" class="btn">Save Entry</button>
+        
+      </div>
+    </form>
+    <!-- <button type="submit" id="form-submit" class="btn"></button> -->
+    <button onclick="window.location.href='/login'">Click Here For Admin Panel</button>
+    </div>
+  </body>
+</html>
